@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Boxes</title>
+    <link rel="icon" href="https://img.freepik.com/free-vector/empty-icons_1308-82981.jpg">
+
+    <style>
+        .box {
+            border: 2px solid rgb(0 255 89);
+            width: 100%;
+            gap: 8px;
+            margin: 24px;
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="flex">
+        <div id="one" class="box">
+            <h1>box 1</h1>
+        </div>
+        <div id="two" class="box">
+            <h1>box 2</h1>
+        </div>
+        <div id="three" class="box">
+            <h1>box 3</h1>
+        </div>
+        <div id="four" class="box">
+            <h1>box 4</h1>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+//Box 1
+const box1 = document.getElementById('one').addEventListener('click', function() {
+    one.style.backgroundColor = 'red'
+    two.style.backgroundColor = 'transparent'
+    three.style.backgroundColor = 'transparent'
+    four.style.backgroundColor = 'transparent'
+})
+
+//Box 2
+const box2 = document.getElementById('two').addEventListener('click', function() {
+    one.style.backgroundColor = 'transparent'
+    two.style.backgroundColor = 'red'
+    three.style.backgroundColor = 'transparent'
+    four.style.backgroundColor = 'transparent'
+})
+
+//Box3
+const box3 = document.getElementById('three').addEventListener('click', function() {
+    one.style.backgroundColor = 'transparent'
+    two.style.backgroundColor = 'transparent'
+    three.style.backgroundColor = 'red'
+    four.style.backgroundColor = 'transparent'
+})
+
+//Box4
+const box4 = document.getElementById('four').addEventListener('click', function() {
+    one.style.backgroundColor = 'transparent'
+    two.style.backgroundColor = 'transparent'
+    three.style.backgroundColor = 'transparent'
+    four.style.backgroundColor = 'red'
+})
+
+
+
+    </script>
+</body>
+</html>
